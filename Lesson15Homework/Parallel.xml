@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="sanity" parallel="tests" thread-count="2">
+    <test name="Tests on chrome">
+        <parameter name="browser" value="chrome">
+            <classes>
+                <class name="Lesson15Homework.runner.LoginTest"></class>
+            </classes>
+        </parameter>
+    </test>
+
+    <test name="Tests on Edge">
+    <parameter name="browser" value="edge">
+        <classes>
+            <class name="Lesson15Homework.runner.LoginTest"></class>
+        </classes>
+    </parameter>
+</test>
+
+</suite>
